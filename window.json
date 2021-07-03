@@ -1,0 +1,185 @@
+{
+  "id" : "box_main",
+  "type" : "gtk_hor_box",
+  "children" : [
+    {
+      "id" : "box_left",
+      "type" :"gtk_ver_box",
+      "children" : [
+        {
+          "id" : "box_token",
+          "type" : "gtk_hor_box",
+          "children" :
+          [
+            {
+              "id" : "label_token",
+              "type" : "gtk_label",
+              "text" : "token"
+            },
+            {
+              "id" : "edit_token",
+              "type" : "gtk_entry",
+              "getter" : true,
+              "setter" : true
+            }
+          ]
+        },
+        {
+          "id" : "box_home_id",
+          "type" : "gtk_hor_box",
+          "children" :
+          [
+            {
+              "id" : "label_home_id",
+              "type" : "gtk_label",
+              "text" : "home_id"
+            },
+            {
+              "id" : "edit_home_id",
+              "type" : "gtk_entry",
+              "getter" : true,
+              "setter" : true
+            }
+          ]
+        },
+        {
+          "id" : "box_gateway",
+          "type" : "gtk_hor_box",
+          "children" : [
+            {
+              "id" : "label_gateway",
+              "type" : "gtk_label",
+              "text" : "gateway"
+            },
+            {
+              "id" : "edit_gateway",
+              "type" : "gtk_entry",
+              "getter" : true,
+              "setter" : true
+            }
+          ]
+        },
+        {
+          "id" : "check_button_inte",
+          "type" : "gtk_check_button",
+          "text" : "back-end inte"
+        },
+        {
+          "id" : "pages_config",
+          "type" : "gtk_notebook",
+          "children" : [
+            {
+              "id" : "page_1",
+              "type" : "gtk_ver_box",
+              "page_name" : "binding",
+              "children" : [
+                {
+                  "id" : "box_ZED",
+                  "type" : "gtk_hor_box",
+                  "children" : [
+                    {
+                      "id" : "label_ZED",
+                      "type" : "gtk_label",
+                      "text" : "ZED/GP to configure"
+                    },
+                    {
+                      "id" : "entry_ZED",
+                      "type" : "gtk_entry"
+                    }
+                  ]
+                },
+                {
+                  "id" : "box_ZED_ep_1",
+                  "type" : "gtk_hor_box",
+                  "children" : [
+                    {
+                      "id" : "check_ep_1",
+                      "type" : "gtk_check_button",
+                      "text" : "ep 1"
+                    },
+                    {
+                      "id" : "label_ep_1",
+                      "type" : "gtk_label",
+                      "text" : "list of ZR to control. Separate with ';'"
+                    },
+                    {
+                      "id" : "entry_ep_1",
+                      "type" : "gtk_entry"
+                    }
+                  ]
+                },
+                {
+                  "id" : "box_ZED_ep_2",
+                  "type" : "gtk_hor_box",
+                  "children" : [
+                    {
+                      "id" : "check_ep_2",
+                      "type" : "gtk_check_button",
+                      "text" : "ep 2"
+                    },
+                    {
+                      "id" : "label_ep_2",
+                      "type" : "gtk_label",
+                      "text" : "list of ZR to control. Separate with ';'"
+                    },
+                    {
+                      "id" : "entry_ep_2",
+                      "type" : "gtk_entry"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id" : "page_2",
+              "type" : "gtk_ver_box",
+              "page_name" : "smart shedding prio"
+            }
+          ]
+        },
+        {
+          "id"   : "bbox",
+          "type" : "gtk_v_button_box",
+          "children" : [
+            {
+              "id" : "button_homes_data",
+              "type" : "gtk_button",
+              "text" : "HomesData",
+              "on_clicked" : "on_click_button_homes_data"
+            },
+            {
+              "id" : "button_home_status",
+              "type" : "gtk_button",
+              "text" : "HomeStatus",
+              "on_clicked" : "on_click_button_home_status"
+            },
+            {
+              "id" : "button_get_configs",
+              "type" : "gtk_button",
+              "text" : "GetConfigs",
+              "on_clicked" : "on_click_button_get_config"
+            },
+            {
+              "id" : "button_set_configs",
+              "type" : "gtk_button",
+              "text" : "SetConfigs",
+              "on_clicked" : "on_click_button_set_config"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "box_right",
+      "type" : "gtk_scrolled_window",
+      "children" :[
+        {
+          "id" : "edit_result",
+          "type" : "gtk_label",
+          "text" : "result...",
+          "setter": true
+        }
+      ]
+    }
+  ]
+}
